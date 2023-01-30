@@ -48,3 +48,19 @@ For example:
 - I have 3 years experience in Java and I started to use Spring Boot from last year
 - I'm a beginner and just recently learned Spring Boot
 - I know Spring Boot very well and have been using it for many years
+
+#### Additional comments from Mykyta
+Hello, thank you for the test task. Here is the list of changes that were performed:
+- Added JD
+- Changed package names
+- Changed some of the method names to fit more to the functionality
+- Added e2e test for the controller
+- Fixed the controller's saveEmployee method signature (@RequestBody was missing)
+- Added Slf4j instead of System.out.printl
+- Adjusted controller's RequestMapping with "employees", to remove duplication
+- Removed update method from the service layer due to duplication
+- Changed service layer getEmployee method return type to Optional
+
+What I would do having more time:
+- Add unit and integration tests
+- Consider using DTOs instead of model objects for REST responses
